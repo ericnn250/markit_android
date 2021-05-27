@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+
+    <com.markit.ecommerce.customviews.ScalingImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:background="@color/Black"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter" />
+
+    <RelativeLayout
+        android:id="@+id/f_close"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/close_full_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_cancel_red" />
+    </RelativeLayout>
+
+</RelativeLayout>

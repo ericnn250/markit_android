@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="10dp"
+    android:background="@color/mediumLightGrey">
+
+    <TextView
+        android:id="@+id/cart_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+        android:textColor="@color/Black"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cart_section_header">
+        <RadioButton
+            android:id="@+id/pickatstore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="Pick At Store"
+            android:textColor="@color/custom"
+            android:textStyle="bold"
+            app:cbd_strokeColor="@color/custom" />
+
+        <RadioButton
+            android:id="@+id/deliveratdoorstep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="Deliver at my door step"
+            android:textColor="@color/custom"
+            android:textStyle="bold"
+            app:cbd_strokeColor="@color/custom" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/totatcart"
+        android:layout_below="@id/radioGroup"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textSize="19dp"
+            android:text="Total"/>
+        <TextView
+
+            android:id="@+id/totalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="19dp"
+            android:layout_marginRight="10dp"
+            android:text="45000frw" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Checkout"
+        android:textColor="@color/white"
+        android:background="@color/custom"
+         android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/totatcart"/>
+
+
+
+</RelativeLayout>

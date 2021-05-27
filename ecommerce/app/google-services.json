@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "48719399810",
+    "project_id": "ecommerce-1c010",
+    "storage_bucket": "ecommerce-1c010.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48719399810:android:f289239963c3f295bb5d9b",
+        "android_client_info": {
+          "package_name": "com.markit.ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48719399810-0tdr7fhg94c0rg4e51r72vnsrt1lbpb8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOJzN7FThBN6JPfXRidCY3a5wR1Ovf4MY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48719399810-0tdr7fhg94c0rg4e51r72vnsrt1lbpb8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

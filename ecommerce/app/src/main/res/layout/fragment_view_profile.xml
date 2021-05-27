@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/White"
+    android:layout_height="match_parent"
+    tools:context=".ViewProfileFragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_view_profile"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" >
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/back_arrow">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_ios"
+                android:layout_centerVertical="true"
+                android:id="@+id/image_back_arrow"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_heading"
+            android:text="Eric"
+            android:textColor="@color/White"
+            android:layout_toRightOf="@+id/back_arrow"
+            android:textSize="20sp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_view_profile">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/applogo"
+            android:alpha=".1"
+            android:id="@+id/background"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_view_profile"
+        android:id="@+id/parent_view">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- Bottom Half of Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:id="@+id/name"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:text="Names"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/Black"/>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Personel Information"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="Email: "
+                            android:id="@+id/text_email"
+                            android:textSize="20sp"
+                            android:textColor="@color/Black"
+                            android:layout_gravity="center_vertical"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="yes1ericn@gmail.com"
+                            android:id="@+id/profile_email"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/Black"
+                            android:layout_gravity="center_vertical"
+                            android:layout_toRightOf="@+id/text_email"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="Username: "
+                            android:id="@+id/text_username"
+                            android:textSize="20sp"
+                            android:textColor="@color/Black"
+                            android:layout_centerVertical="true"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ericn"
+                            android:id="@+id/profile_username"
+                            android:textColor="@color/Black"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/text_username"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="Telephone: "
+                            android:id="@+id/text_phone"
+                            android:textSize="20sp"
+                            android:textColor="@color/Black"
+                            android:layout_centerVertical="true"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+250788236167"
+                            android:id="@+id/profile_phone"
+                            android:textColor="@color/Black"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/text_phone"/>
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery Information "
+                        android:id="@+id/text_delivery_info"
+                        android:layout_centerVertical="true"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit"
+                        android:id="@+id/status"
+                        android:textColor="@color/blue2"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"/>
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Province: "
+                        android:id="@+id/text_province"
+                        android:textSize="20sp"
+                        android:textColor="@color/Black"
+                        android:layout_centerVertical="true"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Eastern Province"
+                        android:id="@+id/profile_province"
+                        android:textColor="@color/Black"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/text_province"/>
+
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="District: "
+                        android:id="@+id/text_district"
+                        android:textSize="20sp"
+                        android:textColor="@color/Black"
+                        android:layout_centerVertical="true"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rwamagana"
+                        android:id="@+id/profile_district"
+                        android:textColor="@color/Black"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/text_district"/>
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sector: "
+                        android:id="@+id/text_sector"
+                        android:textSize="20sp"
+                        android:textColor="@color/Black"
+                        android:layout_centerVertical="true"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remera"
+                        android:id="@+id/profile_sector"
+                        android:textColor="@color/Black"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/text_sector"/>
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Address: "
+                        android:id="@+id/text_adress"
+                        android:textSize="20sp"
+                        android:textColor="@color/Black"
+                        android:layout_centerVertical="true"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rn 305 st 20"
+                        android:id="@+id/profile_adress"
+                        android:textColor="@color/Black"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/text_adress"/>
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Address Description: "
+                        android:id="@+id/text_adres_desc"
+                        android:textSize="20sp"
+                        android:textColor="@color/Black"
+                        android:layout_centerVertical="true"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lorem_ipsum"
+                        android:id="@+id/profile_address_desc"
+                        android:textColor="@color/Black"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/text_adres_desc"/>
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transaction made: "
+                        android:id="@+id/text_tr"
+                        android:layout_centerVertical="true"/>
+
+
+
+
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:id="@+id/profile_no_transaction"
+                    android:layout_gravity="center_horizontal"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/prev_transaction_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
